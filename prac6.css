@@ -1,0 +1,9 @@
+p{
+    color: magenta;
+    background-color: aqua ;
+    height: 90px;
+    width: 130px;
+
+    border: 6px solid rgb(137, 137, 202);
+    border-radius: 40px;
+}
