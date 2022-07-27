@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+
+        .item{
+            background-color: sandybrown;
+            color: crimson;
+            font-size: 43px;
+            margin: 12px 13px;
+            text-align: center;
+            display: none;
+        }
+        
+        @media only screen and   (max-width: 480px){
+            #item-1{
+                display: block;
+                color: white;
+                background-color: rgb(67, 117, 211);
+
+            }
+        }
+        @media only screen and  (min-width:480px) and (max-width: 720px){
+            #item-2{
+                display: block;
+                color: white;
+                background-color: rgb(24, 233, 87);
+
+            }
+        }
+        @media only screen and  (min-width:720px) and (max-width: 1200px){
+            #item-3{
+                display: block;
+                color: white;
+                background-color: rgb(228, 112, 18);
+
+            }
+        }
+        @media only screen and  (min-width:1200px) and (max-width: 1600px){
+            #item-4{
+                display: block;
+                color: white;
+                background-color: rgba(17, 145, 145, 0.89);
+
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    
+        <div class="item" id="item-1">MAI EK MOBILE HU</div>
+        <div class="item" id="item-2">MAI EK TABLET HU</div>
+        <div class="item" id="item-3"> MAI EK LAPTOP HU </div>
+        <div class="item" id="item-4">MAI EK COMPUTER HU</div>
+
+</body>
+</html>

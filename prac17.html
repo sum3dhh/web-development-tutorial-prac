@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visiblity</title>
+    <style>
+        .box {
+            height: 170px;
+            width: 170px;
+            border: 3px solid black;
+
+        }
+
+        #box1 {
+            background-color: aqua;
+            position: relative;
+            top: 69px;
+            z-index: 1;
+        }
+
+        #box2 {
+            background-color: crimson;
+            position: relative;
+            top: 38px;
+            z-index: 0;
+        }
+
+        #box3 {
+            background-color: #008b8b;
+            /* visibility:hidden; */
+            /* display: none; */
+        }
+
+        #box4 {
+            background-color: darkorchid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+
+</html>
