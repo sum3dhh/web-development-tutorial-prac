@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow & Text SHadow</title>
+ </head>
+ <style>
+    .container{
+        display: flex;
+         
+    }
+    .box{
+        border: 3px solid slateblue;
+        background-color: darkkhaki;
+        margin: 14px 16px;
+        padding: 34px 39px;
+        /* box-shadow: offset-x offset-y color; */
+        /* box-shadow: offset-x offset-y blur-radius color; */
+        /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+        box-shadow:  13px 5px 14px 2px blue;
+
+    }
+    .box h2{
+
+        /* text-shadow: -2px -3px 4px  rgb(223, 236, 223); */
+        text-shadow: 2px 3px 4px  rgb(223, 236, 223);
+    }
+ </style>
+ <body>
+    <div class="container">
+        <div class="box" id="box-1">
+            <h2>This is Naruto Card</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum magnam at, in expedita maiores dolorem quod. Corrupti soluta voluptate eius tenetur assumenda, doloribus ad
+        
+        </div>
+        <div class="box" id="box-2">
+            <h2>This is Bleach Card</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum magnam at, in expedita maiores dolorem quod. Corrupti soluta voluptate eius tenetur assumenda, doloribus ad
+
+        </div>
+        <div class="box" id="box-3">
+            <h2>This is One Piece Card</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum magnam at, in expedita maiores dolorem quod. Corrupti soluta voluptate eius tenetur assumenda, doloribus ad
+
+        </div>
+    </div>
+ </body>
+ </html>

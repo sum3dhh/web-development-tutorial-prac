@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo selectors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Kanit&family=Roboto+Condensed:ital,wght@0,300;1,700&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        background-color: black;
+        color: rgb(236, 233, 228);
+        margin: 0;
+        font-family: 'Kanit', sans-serif;
+        padding: 0;
+    }
+    .navi{
+        display: flex;
+        
+    }
+    header::before{
+        background-image: url('https://source.unsplash.com/random/1920x1080/?wallpaper,landscape');
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.6;
+        top: 0;
+        left: 0;
+        
+    }
+    .navb{
+        list-style: none;
+        padding: 13px 14px;
+    }
+    section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 44px 117px;
+        /* border: 2px solid wheat; */
+        /* height: 500px; */
+    }
+    p{
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+        font-size: 4rem;
+    }
+
+
+</style>
+<body>
+    <header>
+    <nav class="navbar">
+        <ul class="navi">
+            <li class="navb">Home</li>
+            <li class="navb">About us</li>
+            <li class="navb">Services</li>
+            <li class="navb">Explore</li>
+
+        </ul>
+    </nav>
+
+    </header>
+    <section>
+        <h1>Welcome To Anime World</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident impedit iure exercitationem blanditiis natus inventore tempora expedita praesentium illum minus incidunt obcaecati placeat totam, magni aliquam, odit voluptate sit eaque neque et mollitia veniam omnis? Repudiandae ab nisi assumenda fuga quisquam dignissimos, saepe unde.</p>
+        
+    </section>
+    <hr>
+</body>
+</html>

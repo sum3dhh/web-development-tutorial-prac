@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<style>
+    :root{
+
+        --temp-color: rgb(38, 194, 59);
+        --beta-color: rgb(236, 196, 16);
+        --maxw:500px;
+    }
+    .container{
+        display: flex;
+        max-width:var(--maxw) ;
+        margin: auto;
+        background-color: var(--beta-color);
+        align-items: center;
+        justify-content: center;
+        padding: 14px 20px;
+    }
+    .box{
+        border: 2px solid var(--temp-color);
+        background-color:var(--temp-color);
+        width:150px;
+        height: 150px;
+        margin: 14px 16px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box" id="box-1"></div>
+        <div class="box" id="box-2"></div>
+        <div class="box" id="box-3"></div>
+    </div>
+</body>
+</html>
