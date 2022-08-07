@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Practice</title>
+</head>
+
+<body>
+    <h1>Lorem, ipsum dolor.</h1>
+    <script>
+        let str = "Hell is Like a Home to me";
+        console.log(str);
+
+        let position = str.indexOf('me');
+        console.log(position);
+
+        position = str.lastIndexOf('me');
+        console.log(position);
+
+        // String Slicing
+        let slc = str.slice(0, 11);
+        console.log(slc);
+
+        console.log(str);
+        let repl = str.replace('Hell', 'Anime');
+        console.log(repl);
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+        var newString = str.concat('New String')
+        console.log(newString)
+        var strWithWhitespaces = "   this contains        whitespaces   ";
+        console.log(strWithWhitespaces)
+        console.log(strWithWhitespaces.trim())
+
+        var char2 = str.charAt(2);
+        var char2 = str.charCodeAt(2); // Not very important
+        console.log(char2)
+
+
+
+
+
+    </script>
+</body>
+
+</html>
