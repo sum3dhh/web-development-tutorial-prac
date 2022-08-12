@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <h1>This is about Loops</h1>
+
+
+    <script>
+        console.log("this is about loops");
+        let array = ["Rohan", "Sanjeev", "Deepti", "Pooja", "SkillF"];
+        // for (let i = 0; i < array.length; i++) {
+        //    console.log("Hello " + array[i]);
+             
+        // }
+        // array.forEach(function f(element) {
+        //     console.log("hello lodu " + element)
+        
+        // });
+        // for (element of array){
+    //     console.log("Hello Friend, " + element + " to modern JavaScript again");
+    // }
+       
+        let employee = {
+            name: 'Sumit',
+            salary: 5000,
+            id:214019
+        }
+        for (const key in employee) {
+            console.log(`The ${key} of the Employee is ${employee[key]}`)
+        }
+        
+        // While Loops
+        let i = 0;
+        while (i<=10) {
+            console.log(`${i} is now ` + i);
+            i++;
+            
+        }
+        i = 1;
+        do{
+            console.log("hey bro how you doing?");
+            i++;
+        }while(i<100);
+    </script>
+</body>
+
+</html>

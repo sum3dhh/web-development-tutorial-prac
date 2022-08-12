@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <div class="cls">
+     this now time <span id="time"></span>
+    </div>
+
+    <script>
+        console.log("Tutorial of SetInterval and SetTimeout");
+
+        // function greet(name,txt){
+        //     console.log("Hello " + name + txt);
+        // }
+        // timeout = setTimeout(greet,4000,"sumedh ","take care");
+        // console.log(timeout);
+        // // clearTimeout(timeout);
+
+        // intervalValid = setInterval(greet,5000,"sumedh","See you" )
+        // console.log(intervalValid);
+
+        function displayTime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+
+        }
+        setInterval(displayTime,1000);
+    </script>
+</body>
+</html>
