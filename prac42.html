@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .container {
+        font-size: 23px;
+        background-color: blanchedalmond;
+        border: 2px solid grey;
+        padding: 34px;
+        margin: 4px;
+        text-align: center;
+    }
+
+    #time {
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        current time is <span id="time"></span>
+    </div>
+    <script>
+        let now = new Date();
+        console.log(now);
+        // let newDate = new Date("3029-9-10");
+        // console.log(newDate);
+
+        let newDate = new Date(4021,11,23,12,45,34);
+        
+        console.log(newDate)
+        
+
+        let yr =  newDate.getFullYear();
+        console.log(yr);
+        let month =  newDate.getMonth();
+        console.log(month);
+        let day =  newDate.getDay();
+        console.log(day);
+        let hrs =  newDate.getHours();
+        console.log(hrs);
+        let min =  newDate.getMinutes();
+        console.log( min);
+
+        newDate.setDate(8);
+        newDate.setMinutes(29);
+        console.log(newDate)
+        setInterval(updateTime, 1000);
+
+        function updateTime(){
+            time.innerHTML = new Date();
+        }
+    </script>
+</body>
+</html>
